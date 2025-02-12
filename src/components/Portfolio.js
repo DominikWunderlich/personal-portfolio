@@ -1,5 +1,6 @@
 import React from 'react';
 import profilePic from '../images/profile.jpeg';
+import projectPic from '../images/ProjectManagement.jpg'
 import {
   AppBar,
   Box,
@@ -115,10 +116,10 @@ const Portfolio = () => {
               Software Engineer | Founder JODOKO | Student Business Informatics
             </Typography>
             <Typography variant="body1" color="text.secondary" sx={{ maxWidth: 600, mx: 'auto' }}>
-			Ich bin Dominik, ein Software Engineer mit einer Leidenschaft für KI,
-			Cloud-Technologien und effiziente Softwarelösungen. Neben meiner Arbeit als Entwickler
-			studiere ich Business Informatics und betreibe ein eigenes E-Commerce-Unternehmen. Mein Fokus
-			liegt auf der Verbindung von Technologie und Wirtschaft, um smarte, skalierbare Lösungen zu entwickeln.
+            Ich bin ein leidenschaftlicher Softwareingenieur mit Fokus auf innovative Anwendungen in
+            den Bereichen KI und Cloud-Technologien.  Durch mein Studium der Wirtschaftsinformatik und
+            die Führung eines eigenen E-Commerce-Unternehmens  verbinde ich technologisches Know-how mit
+            unternehmerischem Denken, um zukunftsorientierte, skalierbare Lösungen zu entwickeln.
             </Typography>
           </Box>
         </Container>
@@ -137,7 +138,7 @@ const Portfolio = () => {
                   <CardMedia
                     component="img"
                     height="140"
-                    image="/api/placeholder/300/140"
+                    image={projectPic}
                     alt={project.title}
                   />
                   <CardContent>
@@ -241,13 +242,13 @@ const Portfolio = () => {
             Kontakt
           </Typography>
           <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mb: 4 }}>
-            <IconButton color="primary" href="https://github.com">
+            <IconButton color="primary" href="https://github.com/DominikWunderlich">
               <GitHubIcon />
             </IconButton>
-            <IconButton color="primary" href="https://linkedin.com">
+            <IconButton color="primary" href="https://www.linkedin.com/in/dominik-abilio-wunderlich-a807b81b2">
               <LinkedInIcon />
             </IconButton>
-            <IconButton color="primary" href="mailto:email@example.com">
+            <IconButton color="primary" href="mailto:dominik.wunderlich@jodoko.de">
               <EmailIcon />
             </IconButton>
           </Box>
@@ -256,7 +257,7 @@ const Portfolio = () => {
               <PhoneIcon /> +49 123 456789
             </Typography>
             <Typography variant="body1" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 1, mt: 1 }}>
-              <EmailIcon /> email@example.com
+              <EmailIcon /> dominik.wunderlich@jodoko.de
             </Typography>
           </Box>
         </Container>
